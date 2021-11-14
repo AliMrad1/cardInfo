@@ -25,7 +25,7 @@ body{
        justify-content: space-between;
        width: 100%;
        height: 5.6%;
-      
+       z-index: 10;
        background-color: transparent;
        position: fixed;
 
@@ -341,3 +341,7 @@ header.nav-fixed {
        background-color:#fff;
        box-shadow: 5px -1px 12px -5px grey;
    }
+
+
+   .nav-colored { background-color:#000; }
+.nav-transparent { background-color:transparent;}
