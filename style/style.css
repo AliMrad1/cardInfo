@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&display=swap');
+
+
+body{
+       height: 100%;
+       width: 100%;
+       margin: 0;
+       padding: 0;
+       background: #f1f1f1;
+       position: absolute;
+       box-sizing: border-box;
+       overflow-y: scroll;
+}
+
+.header{
+       height: 80%;
+       width: 100%;
+}
+
+.header-i{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       width: 100%;
+       height: 5.6%;
+      
+       background-color: transparent;
+       position: fixed;
+
+}
+
+
+
+.logo{
+       width: 3.5%;
+       height: 100%;
+       margin-top: 1%;
+       margin-left: 2%;
+       position: initial;
+       
+}
+
+
+.nav{
+       line-height: 0px;
+       font-size: 17px;
+       font-family: 'Dongle', sans-serif;
+     }
+     .nav ul{
+       float: right;
+       margin-right: 30px;
+       
+     }
+     .nav ul li{
+       list-style-type: none;
+       display: inline-block;
+       transition: 0.7s all;
+       
+     }
+  
+     .nav ul li a{
+       font-size: 120%;
+       text-decoration: none;
+       color: #fff;
+       padding: 15px;
+       text-decoration: none;
+       transition: color 0.1s, background-color 0.1s;
+       
+  
+       position: relative;
+       display: block;
+      
+       
+       text-transform: uppercase;
+       transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
+       display: inline-block;
+     }
+
+   
+   .nav ul li a:hover, a:focus, a:active {
+      /* color: #088; */
+       text-decoration: none;
+   }
+  
+      
+   
+   a::before {
+       content: '';
+       display: block;
+       position: absolute;
+       bottom: 3px;
+       left: 0;
+       height: 3px;
+       width: 100%;
+       background-color: #FFFF00;
+       transform-origin: right top;
+       transform: scale(0, 1);
+       transition: color 0.1s,transform 0.2s ease-out;
+   }
+   a:active::before {
+       background-color: #FFFF00;
+   }
+   a:hover::before, a:focus::before {
+       transform-origin: left top;
+       transform: scale(1, 1);
+   }
+
+.back{
+    object-fit: scale-down;
+  
+}
+
+.card-container{
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       width: 90%;
+       height: 150%;
+       background: #FFFFFF;
+       position: absolute;
+       top: 15%;
+       left: 5%;
+   
+
+}
+
+.upper-container{
+       height: 87.5%;
+       background: #FFFFFF;
+       display: flex;
+       flex-direction: row;
+
+}
+
+.lower-container{
+       height: 10.5%;
+     
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+       padding: 10px;
+       
+}
+
+.profile{
+       width: 30%;
+       height: 105%;
+       margin-top: 3%;
+       margin-left: 4%;
+       object-fit: cover;
+      /* border: 7px solid #088; */
+}
+.information-container{
+       width: 40%;
+       height: 80%;
+       margin-left: 5%;
+       margin-top: 4.5%;
+}
+
+h1{
+       font-family: 'Roboto', sans-serif;
+       margin: 0%;
+}
+
+.career{
+       font-family: 'Roboto', sans-serif;
+       margin-top: 0%;
+}
+
+h6{
+       font-family: 'Roboto', sans-serif;
+}
+
+.other-information{
+       width: 80%;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+}
+
+.information-v{
+       color: #808080       ;
+}
+
+.resume{
+       margin-top: 42%;
+       position: fixed;  
+       margin-left: 42.5%;
+
+}
+
+p{
+       font-family: 'Dongle', sans-serif;
+       font-size: 20px;
+       line-height: 70%;
+}
+
+
+.btn{
+      font-size: 94%;
+     
+       background-color: yellow;
+       width: 20%;
+       height: 50%;
+       border-radius: 4px;
+       border-color: yellow;
+       font-family: 'Roboto', sans-serif;
+}
+
+.bottom-content{
+       position: absolute;
+
+       display: flex;
+       flex-direction: column;
+       bottom: 0%;
+}
+
+
+
+#menu_button
+{
+    width: 2.7%;
+    overflow: hidden;
+    margin-left: 2%;
+       margin-top: 1.1%;
+}
+
+#menu_checkbox
+{
+    display: none;
+}
+
+#menu_label
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 1%;
+    cursor: pointer;
+}
+
+#menu_label:before, #menu_label:after, #menu_text_bar
+{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+}
+
+#menu_label:before, #menu_label:after
+{
+    content: '';
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55) left;
+}
+
+#menu_label:before
+{
+    top: 0;
+}
+
+#menu_label:after
+{
+    top: 8px;
+}
+
+#menu_text_bar
+{
+    top: 16px;
+}
+
+#menu_text_bar:before
+{
+    content: 'MENU';
+    position: absolute;
+    top: 5px;
+    right: 0;
+    left: 0;
+    color: yellow;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#menu_checkbox:checked + #menu_label:before
+{
+    left:-100%;
+}
+
+#menu_checkbox:checked + #menu_label:after
+{
+    left: 100%;
+}
+
+#menu_checkbox:checked + #menu_label #menu_text_bar:before
+{
+    animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
+}
+
+@keyframes moveUpThenDown
+{
+    0%{ top:0; }
+    50%{ top:-27px;}
+    100%{ top:-14px; }
+}
+
+@keyframes shakeWhileMovingUp
+{
+    0%{ transform: rotateZ(0); }
+    25%{ transform:rotateZ(-10deg); }
+    50%{ transform:rotateZ(0deg); }
+    75%{ transform:rotateZ(10deg); }
+    100%{ transform:rotateZ(0); }
+}
+
+@keyframes shakeWhileMovingDown
+{
+    0%{ transform:rotateZ(0); }
+    80%{ transform:rotateZ(3deg); }
+    90%{ transform:rotateZ(-3deg); }
+    100%{ transform:rotateZ(0); }
+}
+
+.skills li{
+       padding: 1.6%;
+       font-family: 'Dongle', sans-serif;
+       font-size: 130%;
+}
+
+header.nav-fixed {
+       width: 100%;
+       position: fixed;
+       transition: 0.3s ease-in-out;
+   }
+   
+   .nav-active {
+       background-color:#fff;
+       box-shadow: 5px -1px 12px -5px grey;
+   }
